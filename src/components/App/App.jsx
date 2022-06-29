@@ -1,9 +1,11 @@
 import { Box } from "./App.styled";
 import { Profile } from "../Profile/Profile";
-import user from "../Profile/user.json";
-import data from "../Statistics/data.json";
+import data from 'data/data.json';
+import friends from 'data/friends.json';
+import user from 'data/user.json';
 import { Statistics } from "components/Statistics/Statistics";
 import ColorRandomizer from "helpers/ColorRandomizer";
+import FriendList from "../FriendList/FriendList";
   
   
 export const App = () => {
@@ -17,9 +19,8 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} fn={ColorRandomizer} />
-      {/* <Statistics stats={data} fn={ColorRandomizer} /> */}
-      {/* <FriendList friends={friends} />
-      <TransactionHistory items={transactions} /> */}
+      <FriendList friends={friends} />
+      {/* <TransactionHistory items={transactions} /> */}
       </Box>
   );
 };
