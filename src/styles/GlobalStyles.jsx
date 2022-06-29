@@ -1,14 +1,14 @@
 import { css } from '@emotion/react';
 import { theme } from './theme';
 
-export const GlobalStyles = props => css`
+export const GlobalStyles = css`
   html {
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-    background-color: ${theme.colors.light};
+    font-family: 'Roboto';
+    background-color: ${theme.colors.bgmain};
     font-style: normal;
   }
   h1,

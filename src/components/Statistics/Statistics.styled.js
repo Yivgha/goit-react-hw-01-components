@@ -7,7 +7,7 @@ export const StatSection = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
   border: solid 1px #afb3c0;
   border-radius: 3px;
@@ -18,7 +18,7 @@ export const Title = styled.h2`
   padding-top: 15px;
   font-size: 20px;
   text-transform: uppercase;
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.gray};
 `;
 
 export const StatList = styled.ul`

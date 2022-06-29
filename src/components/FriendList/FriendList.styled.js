@@ -22,6 +22,8 @@ export const FriendItem = styled.li`
 export const Status = styled.span`
   width: 15px;
   height: 15px;
+  margin-top: 18px;
+  margin-left: 8px;
   border-radius: 50%;
   background-color: ${({ status }) => {
     switch (status) {
