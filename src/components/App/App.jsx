@@ -6,8 +6,9 @@ import user from 'data/user.json';
 import { Statistics } from "components/Statistics/Statistics";
 import ColorRandomizer from "helpers/ColorRandomizer";
 import FriendList from "../FriendList/FriendList";
-  
-  
+import TransactionHistory from "components/TransactionHistory/TransactionHistory";
+import transactions from "data/transactions.json";
+
 export const App = () => {
   return (
     <Box>
@@ -20,7 +21,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} fn={ColorRandomizer} />
       <FriendList friends={friends} />
-      {/* <TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />;
       </Box>
   );
 };
